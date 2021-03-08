@@ -8,6 +8,7 @@
   "license": "MIT License",
   "keywords": [ ],
   "scripts": {
+    "audit": "npm audit --production --audit-level=high",
     "build": "tsc",
     "lint": "eslint --cache --fix --ignore-path .gitignore .",
     "test": "jest"
