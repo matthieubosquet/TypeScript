@@ -1,6 +1,6 @@
 import { ITest } from '.';
 
 export interface ITestCase extends ITest {
-  readonly input: any;
-  readonly output: any;
+  readonly input: unknown;
+  readonly output: unknown;
 }

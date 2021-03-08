@@ -4,8 +4,8 @@ export class TestCase implements ITestCase {
   public readonly label: string;
   public readonly description: string;
   public readonly seeAlso: string[];
-  public readonly input: any;
-  public readonly output: any;
+  public readonly input: unknown;
+  public readonly output: unknown;
 
   constructor(args: Partial<ITestCase>) {
     const {
