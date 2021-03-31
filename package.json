@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": "x",
   "files": [ "dist" ],
   "license": "MIT",
   "keywords": [ ],
