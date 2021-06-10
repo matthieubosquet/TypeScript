@@ -10,9 +10,10 @@
   "license": "MIT",
   "keywords": [ ],
   "scripts": {
-    "audit": "npm audit --production --audit-level=high",
+    "audit": "npm audit --production --audit-level high",
     "build": "tsc",
     "lint": "eslint --cache --fix --ignore-path .gitignore .",
+    "start": "npm run build && node .",
     "test": "jest"
   }
 }
