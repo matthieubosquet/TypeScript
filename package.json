@@ -13,8 +13,9 @@
     "audit": "npm audit --production --audit-level high",
     "build": "tsc",
     "lint": "eslint --cache --fix --ignore-path .gitignore .",
+    "prepare": "git config --local core.hooksPath .githooks/",
     "start": "npm run build && node .",
-    "test": "jest",
+    "test": "jest --config .jestrc.js",
     "test:unit": "jest test/unit.test.ts"
   }
 }
