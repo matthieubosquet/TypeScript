@@ -14,3 +14,7 @@ npm i --save-dev @solid/eslint-config-base @tsconfig/node14 @types/jest @types/n
 ```bash
 npm i --save-dev @rdfjs/types @types/n3 n3
 ```
+
+## GitHub CI
+
+Actions to audit and test on push to main and publish on release creation.
