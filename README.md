@@ -1,4 +1,5 @@
 # TypeScript
+
 Scaffolding TypeScript projects
 
 ## Install

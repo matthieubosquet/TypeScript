@@ -6,9 +6,11 @@
   "types": "dist/index.d.ts",
   "repository": "<REPOSITORY>",
   "bugs": "<REPOSITORY>/issues",
-  "files": [ "dist" ],
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
-  "keywords": [ ],
+  "keywords": [],
   "scripts": {
     "audit": "npm audit --production --audit-level high",
     "build": "tsc",
