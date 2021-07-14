@@ -12,15 +12,14 @@
   "license": "MIT",
   "keywords": [],
   "scripts": {
-    "audit": "npm audit --production --audit-level high",
+    "audit": "npm audit --production --audit-level=high",
     "build": "tsc",
     "lint": "npm run lint:eslint && npm run lint:prettier",
-    "lint:check": "eslint --ignore-path .gitignore . && prettier --ignore-path .gitignore '**/*.{css,html,json,md,mdx,yml}'",
     "lint:eslint": "eslint --cache --fix --ignore-path .gitignore .",
     "lint:prettier": "prettier --write --ignore-path .gitignore '**/*.{css,html,json,md,mdx,yml}'",
-    "prepare": "git config --local core.hooksPath .githooks/",
     "start": "npm run build && node .",
     "test": "jest --config .jestrc.js",
-    "test:unit": "jest test/unit.test.ts"
+    "prepare": "git config --local core.hooksPath .githooks/",
+    "prepublishOnly": "npm run audit && npm ci --ignore-scripts && npm run build && npm run test"
   }
 }

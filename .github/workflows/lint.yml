@@ -11,7 +11,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: "14.x"
+          node-version: "16.x"
           registry-url: "https://registry.npmjs.org"
-      - run: npm ci
-      - run: npm run lint:check
+      - run: npm ci --ignore-scripts
+      - run: npx --no-install eslint --ignore-path .gitignore .
+      - run: npx --no-install prettier --check --ignore-path .gitignore '**/*.{css,html,json,md,mdx,yml}'
