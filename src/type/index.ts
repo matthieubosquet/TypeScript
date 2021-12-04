@@ -1,1 +1,1 @@
-export * from "./IX";
+export type { IX } from "./IX";
