@@ -6,8 +6,8 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "require": "./dist/mod.js",
+      "import": "./dist/mod.mjs"
     },
     "./x": "./dist/x/index.mjs"
   },
