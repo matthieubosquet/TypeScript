@@ -19,3 +19,7 @@ npm i --save-dev @rdfjs/types @types/n3 n3
 ## GitHub CI
 
 Actions to audit and test on push to main and publish on release creation.
+
+## VSCode
+
+It's quite handy to install the [Jest extension](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest). To properly use, setup the "Jest Command Line": `npm test --` in VSCode's Jest settings.
