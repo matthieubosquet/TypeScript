@@ -22,4 +22,27 @@ Actions to audit and test on push to main and publish on release creation.
 
 ## VSCode
 
-It's quite handy to install the [Jest extension](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest). To properly use, setup the "Jest Command Line": `npm test --` in VSCode's Jest settings.
+The [Jest extension](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) is quite handy to continuously run and debug tests. It needs configuration in [VSCode user settings](https://code.visualstudio.com/docs/getstarted/settings): search and set "Jest Command Line": `npm test --`. In order for the debugging to work properly, add a global launch config one in your user's `settings.json` (probably better), just add a launch field there:
+
+```json
+    "launch": {
+      "configurations": [
+        {
+          "type": "node",
+          "name": "vscode-jest-tests",
+          "request": "launch",
+          "console": "integratedTerminal",
+          "internalConsoleOptions": "neverOpen",
+          "disableOptimisticBPs": true,
+          "cwd": "${workspaceFolder}",
+          "runtimeExecutable": "npm",
+          "args": [
+            "test",
+            "--",
+            "--runInBand",
+            "--watchAll=false"
+          ]
+        }
+      ]
+    },
+```
