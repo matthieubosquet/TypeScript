@@ -32,6 +32,6 @@
     "prepare": "git config --local core.hooksPath .githooks/",
     "prepublishOnly": "npm run audit && npm ci --ignore-scripts && npm run build && npm run test",
     "start": "npm run build -- --watch",
-    "test": "jest --config .jestrc.js"
+    "test": "jest --config .jestrc.js --roots test/unit --"
   }
 }
