@@ -2,8 +2,19 @@
   "name": "<NAME>",
   "version": "0.0.1",
   "description": "<DESCRIPTION>",
+  "license": "MIT",
+  "repository": "<REPOSITORY>",
+  "bugs": "<REPOSITORY>/issues",
+  "homepage": "<REPOSITORY>#readme",
+  "keywords": [],
+  "contributors": [
+    "Matthieu Bosquet <matthieu@cognithive.com> (https://github.com/matthieubosquet/)"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "require": "./dist/mod.js",
@@ -16,13 +27,6 @@
       "x": ["dist/x/index.d.ts"]
     }
   },
-  "repository": "<REPOSITORY>",
-  "bugs": "<REPOSITORY>/issues",
-  "files": [
-    "dist"
-  ],
-  "license": "MIT",
-  "keywords": [],
   "scripts": {
     "audit": "npm audit --production --audit-level=high",
     "build": "tsc",
