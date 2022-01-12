@@ -8,7 +8,7 @@
   "homepage": "<REPOSITORY>#readme",
   "keywords": [],
   "contributors": [
-    "Matthieu Bosquet <matthieu@cognithive.com> (https://github.com/matthieubosquet/)"
+    "Matthieu Bosquet <matthieu@cognithive.com> (https://github.com/matthieubosquet)"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
