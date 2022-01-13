@@ -1,3 +1,7 @@
+---
+name: Publish version
+---
+
 Publish version v<VERSION_NUMBER>.
 
 [ ] Checked steps:

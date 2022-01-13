@@ -1,3 +1,7 @@
+---
+name: Fix issue
+---
+
 Fix issue [#<ISSUE_NUMBER>](ISSUE_URL).
 
 [ ] Checked steps:
